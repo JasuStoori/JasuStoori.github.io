@@ -69,9 +69,10 @@
         </head>
         <body>
             <div class="container">
+                <?php include 'index.php'; ?>
                 <h1>Yhteydenottolomake</h1>
                 <form action="submit_message.php" method="post">
-                    <label for="name">Nimi (vapaaehtoinen):</label>
+                    <label for="name">Nimi/nimimerkki:</label>
                     <input type="text" id="name" name="name"><br><br>
                     <label for="message">Viesti:</label><br>
                     <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
