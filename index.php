@@ -34,3 +34,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["message"])) {
     $conn->close();
 }
 ?>
+       <body>
+            <div class="container">
+                <?php include 'index.php'; ?>
+                <h1>Yhteydenottolomake</h1>
+                <form action="submit_message.php" method="post">
+                    <label for="name">Nimi/nimimerkki:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="message">Viesti:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Lähetä">
+                </form>
+            </div>
+            <div class="container">
+                <h2>Viimeisimmät viestit:</h2>
+                <?php include 'display_messages.php'; ?>
+            </div>
+        </body>
+        </head>
+                  <body>
+                    <div class="navbar">
+                      <a href="Esittely&yhteydenotto.html">Esittely&Yhteydenotto</a>
+                    </div>
+                  </body>
+              </header>
