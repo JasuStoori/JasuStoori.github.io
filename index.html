@@ -65,31 +65,3 @@
             </div>
         </body>
         </html>
-<?php
-// Tiedoston polku, johon laskuri tallennetaan
-$laskuri_tiedosto = "laskuri.txt";
-
-// Avataan tiedosto
-$tiedosto = fopen($laskuri_tiedosto, "r");
-
-// Luetaan nykyinen laskurin arvo
-$laskuri = intval(fread($tiedosto, filesize($laskuri_tiedosto)));
-
-// Suljetaan tiedosto
-fclose($tiedosto);
-
-// Kasvatetaan laskurin arvoa yhdellä
-$laskuri++;
-
-// Tulostetaan laskurin arvo
-echo "Kävijöitä tänään: " . $laskuri;
-
-// Avataan tiedosto kirjoittamista varten
-$tiedosto = fopen($laskuri_tiedosto, "w");
-
-// Kirjoitetaan uusi laskurin arvo tiedostoon
-fwrite($tiedosto, $laskuri);
-
-// Suljetaan tiedosto
-fclose($tiedosto);
-?>
