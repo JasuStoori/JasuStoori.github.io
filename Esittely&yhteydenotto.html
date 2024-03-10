@@ -1,60 +1,86 @@
-<!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JasuStoori</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body bgcolor=#F3DCFA>
+        <title>JasuStoori</title>
+        </head>
+        <body>
+        <body bgcolor=#F3DCFA>
+            <title>Wireframe</title>
+            <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+            
+            <div class="wireframe">
+              <header>
+                <h1>JasuStoori</h1>
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Yläpalkki</title>
+                    <link rel="stylesheet" href="styles.css">
+                  </head>
+                  <body>
+                    <div class="navbar">
+                      <a href="index.html">Etusivu</a>
+                      <a href="Päiväkirja.html">''Päiväkirja''</a>
+                      <a href="Mielenkiinnon kohteet.html">Mielenkiinnon kohteet</a>
+                      <a href="Esittely&yhteydenotto.htm">Esittely&Yhteydenotto</a>
+                    </div>
+                  </body>
+              </header>
+              
+              <main>
+                <section class="content">
+                 
+                  <h2>Esittely & Yhteydenotto</h2>
+                  <p>Tällä pääset lukemaan bloggaajasta sekää löydät yhteydenottolomakkeen.</p>
+                </section>
 
-<header>
-    <div class="navbar">
+                <h3>Esittely</h3>
+                <p>Hei, olen Jasu ja kirjoittelen täällä vähän kaikenlaista mitä mieleen juolahtaa. Olen vasta aloittanut nettivisujen tekemisen, sekä sinne kirjoittelemisen,</p>
+                <p>joten harjoittelen tässä vasta tätä.. :D Katotaa mitä tulee vai tuleeko mitään, haha! </p>
 
-        <a href="Päiväkirja.html">''Päiväkirja''</a>
-        <a href="Mielenkiinnon kohteet.html">Mielenkiinnon kohteet</a>
-        <a href="Esittely&yhteydenotto.htm">Esittely&Yhteydenotto</a>
-        <a href="index.html">Etusivu</a>
-    </div>
-</header>
-
-<main>
-    <section class="content">
-        <h2>Esittely & Yhteydenotto</h2>
-        <p>Tällä pääset lukemaan bloggaajasta sekää löydät yhteydenottolomakkeen.</p>
-    </section>
-
-    <h3>Esittely</h3>
-    <p>Hei, olen Jasu ja kirjoittelen täällä vähän kaikenlaista mitä mieleen juolahtaa. Olen vasta aloittanut nettivisujen tekemisen, sekä sinne kirjoittelemisen,</p>
-    <p>joten harjoittelen tässä vasta tätä.. :D Katotaa mitä tulee vai tuleeko mitään, haha! </p>
-
-    <h3>Ota rohkeasti yhteyttä, tässä yhteydenottolomake</h3>
-
-    <div class="container">
-        <h1>Yhteydenottolomake</h1>
-        <form action="submit_message.php" method="post">
-            <label for="name">Nimi/nimimerkki:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="message">Viesti:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-            <input type="submit" value="Lähetä">
-        </form>
-    </div>
-    <div class="container">
-        <h2>Viimeisimmät viestit:</h2>
-        <?php include 'display_messages.php'; ?>
-    </div>
-</main>
-
-<footer>
-    <div class="navbar">
-        <a href="Päiväkirja.html">''Päiväkirja''</a>
-        <p>|</p>
-        <a href="index.html">Etusivu</a>
-        <p>|</p>
-        <a href="Esittely&yhteydenotto.html">Esittely&Yhteydenotto</a>
-    </div>
-</footer>
-
-</body>
+                <h3>Ota rohkeasti yhteyttä, tässä yhteydenottolomake</h3>
+            
+              </main>
+        <main>
+        </body>
+            <style>
+                .navbar a, .navbar p {
+                    display: inline-block;
+                    margin: 0 5px; /* Lisäämällä marginaalin voit säätää välin leveyttä */
+                }
+            </style>
+        </head>
+        <body>
+            <div class="navbar">
+                <a href="Päiväkirja.html">''Päiväkirja''</a>
+                <p>|</p>
+                <a href="index.html">Etusivu</a>
+                <p>|</p>
+                <a href="Esittely&yhteydenotto.html">Esittely&Yhteydenotto</a>
+            </div>
+        </body>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Yhteydenottolomake</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <div class="container">
+                <?php include 'index.php'; ?>
+                <h1>Yhteydenottolomake</h1>
+                <form action="submit_message.php" method="post">
+                    <label for="name">Nimi/nimimerkki:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="message">Viesti:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Lähetä">
+                </form>
+            </div>
+            <div class="container">
+                <h2>Viimeisimmät viestit:</h2>
+                <?php include 'display_messages.php'; ?>
+            </div>
+        </body>
 </html>
