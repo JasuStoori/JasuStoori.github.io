@@ -36,3 +36,22 @@
 .send-button:hover {
     background-color: #45a049;
 }
+/* styles.css */
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid black; /* Lisää alaviiva */
+    font-size: 16px; /* Määritä fonttikoko */
+    padding: 5px; /* Lisää tilaa inputin ympärille */
+    width: 200px; /* Määritä leveys */
+    outline: none; /* Poista focus-reuna */
+}
+
+/* Väri viivalle, kun input saa focusin */
+input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+/* Lisää väri viivalle */
+input[type="text"]::placeholder {
+    color: black;
+}
