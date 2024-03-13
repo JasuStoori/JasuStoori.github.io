@@ -3,5 +3,6 @@ div.wireframe, div, .navbar {
     border-color: black;
     border-style: solid;
     margin: 5px;
+    padding: 2px;
 }
 
