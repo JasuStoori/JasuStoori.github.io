@@ -6,6 +6,6 @@ div.wireframe, div, .navbar {
     padding: 2px;
 }
 
-.wireframe {
+div.wireframe {
     background-color: #FAECDE;
 }
