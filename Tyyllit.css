@@ -9,3 +9,9 @@ div.wireframe, div, .navbar {
 div.wireframe {
     background-color: #FAECDE;
 }
+
+@media screen and (min-width: 1025px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
