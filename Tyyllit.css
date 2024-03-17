@@ -37,13 +37,13 @@ div.wireframe {
 }
 
 h1 {
-font-size: 45px;
+font-size: 72px;
 }
 @media screen and (min-width: 1025px) {
 }
 
 h1 {
-    font-size: 30px; //pienemmille ruduille
+    font-size: 50px; //pienemmille ruduille
     }
 @media screen and (max-width: 100px) {
 }
