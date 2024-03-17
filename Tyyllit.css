@@ -1,4 +1,4 @@
-div.wireframe, div, .navbar {
+div.JasuStoori, div, .navbar {
     border: 2px;
     border-color: black;
     border-style: solid;
@@ -6,14 +6,12 @@ div.wireframe, div, .navbar {
     padding: 2px;
 }
 
-div.wireframe {
+div.JasuStoori {
     background-color: #FAECDE;
 }
 
 @media screen and (min-width: 1025px) {
  }
-
-
 
 .navbar {
     background-color: #FFFFFF; 
