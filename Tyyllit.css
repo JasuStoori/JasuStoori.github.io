@@ -13,5 +13,98 @@ div.wireframe {
 @media screen and (min-width: 1025px) {
  }
 
- @media screen and (max-width: 100px) {
+
+
+.navbar {
+    background-color: #D8DCEF; 
+    padding: 10px; 
 }
+
+.navbar a {
+    text-decoration: none; 
+    color: #333; 
+    margin-right: 10px; 
+}
+
+.navbar p {
+    margin: 0 5px; 
+    display: inline; 
+}
+
+.navbar a, .navbar p {
+    display: inline-block;
+    margin: 0 5px; 
+}
+
+h1 {
+font-size: 32px;
+}
+@media screen and (max-width: 1025px) {
+}
+
+h1 {
+    font-size: 18px; //pienemmille ruduille
+    }
+
+    .navbar {
+        background-color: #F3DCFA; 
+        padding: 10px; 
+    }
+
+    .navbar a {
+        text-decoration: none; 
+        color: #333; 
+        margin-right: 10px; 
+    }
+
+    .navbar p {
+        margin: 0 5px; 
+        display: inline; 
+    }
+
+    .navbar a, .navbar p {
+        display: inline-block;
+        margin: 0 5px; 
+    }
+
+    .navbar {
+        background-color: #E3F3E6; 
+        padding: 10px; 
+    }
+
+    .navbar a {
+        text-decoration: none; 
+        color: #333; 
+        margin-right: 10px; 
+    }
+
+    .navbar p {
+        margin: 0 5px; 
+        display: inline; 
+    }
+
+    .navbar a, .navbar p {
+        display: inline-block;
+        margin: 0 5px; 
+    }
+
+    .navbar a, .navbar p {
+        display: inline-block;
+        margin: 0 5px; 
+    }
+
+    .navbar {
+        background-color: #E7FCFF; 
+        padding: 10px; 
+    }
+
+    .navbar a {
+        text-decoration: none; 
+        color: #333; 
+        margin-right: 10px; 
+    }
+
+    .navbar p {
+        margin: 0 5px; 
+        display: inline; 
+    }
