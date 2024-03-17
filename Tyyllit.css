@@ -39,12 +39,14 @@ div.wireframe {
 h1 {
 font-size: 32px;
 }
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 1025px) {
 }
 
 h1 {
     font-size: 18px; //pienemmille ruduille
     }
+@media screen and (max-width: 100px) {
+}
 
     .navbar {
         background-color: #F3DCFA; 
